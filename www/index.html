@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electrobook</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ЭКРАН 1: ВХОД/РЕГИСТРАЦИЯ -->
+  <div id="auth-screen">
+    <div class="auth-bg">
+      <div class="particles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+
+    <div class="auth-container">
+      <div class="logo-wrapper">
+        <div class="logo-glow"></div>
+        <img 
+          src="data:image/webp;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACglgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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" 
+          alt="Electrobook" 
+          class="logo" 
+        />
+      </div>
+
+      <h1 id="title">Вход в Electrobook</h1>
+
+      <form id="auth-form">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Пароль" required />
+        <button type="submit" id="submit-btn">Войти</button>
+      </form>
+
+      <p id="error" class="error"></p>
+      <p id="message" class="message"></p>
+
+      <div class="warning-box hidden-warning" id="password-warning">
+        <span class="warning-icon">⚠️</span>
+        <p>
+          <strong>Важно!</strong> Перед регистрацией запишите пароль в блокнот.
+          Если вы забудете пароль — <strong>аккаунт будет потерян навсегда</strong>.
+        </p>
+      </div>
+
+      <div class="auth-links">
+        <p class="toggle-link" id="toggle-mode">Нет аккаунта? Зарегистрироваться</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ЭКРАН 2: ОБЩЕСТВЕННЫЙ ИНТЕРФЕЙС (ТОЛЬКО ЛИЧНЫЕ ЧАТЫ) -->
+  <div id="chat-screen" class="hidden">
+
+    <aside class="sidebar">
+      <header class="top-bar">
+        <h2>Electrobook</h2>
+        <button class="icon-btn" id="archive-btn" title="Архив">📦</button>
+        <button class="icon-btn" id="settings-btn" title="Настройки">⚙️</button>
+        <button class="icon-btn" id="logout-btn" title="Выйти">⎋</button>
+      </header>
+
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Поиск по @username или email..." />
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="chats">Чаты</button>
+        <button class="filter" data-filter="contacts">Контакты</button>
+      </div>
+
+      <div class="list" id="list">
+        <div class="empty-state">
+          <p>Пока пусто</p>
+          <span>Найдите пользователя через поиск</span>
+        </div>
+      </div>
+
+      <footer class="profile-bar" id="my-profile-btn" title="Открыть профиль">
+        <div class="avatar" id="my-avatar">?</div>
+        <div class="profile-text">
+          <p id="my-username">@user</p>
+          <span id="my-email">email@example.com</span>
+        </div>
+        <span class="profile-arrow">›</span>
+      </footer>
+    </aside>
+
+    <main class="chat-area">
+      <div class="placeholder" id="placeholder">
+        <div class="placeholder-icon">💬</div>
+        <h2>Выберите, кому хотели бы написать</h2>
+        <p>Найдите пользователя через поиск слева или выберите чат из списка</p>
+      </div>
+
+      <div class="chat-window hidden" id="chat-window">
+        <header class="chat-header">
+          <button class="icon-btn back-btn" id="back-btn">←</button>
+          <div class="avatar" id="chat-avatar">?</div>
+          <div class="chat-header-info">
+            <p class="chat-name" id="chat-name">Имя</p>
+            <span class="chat-status" id="chat-status">@username</span>
+          </div>
+          <button class="icon-btn" id="call-btn" title="Позвонить">📞</button>
+          <button class="icon-btn" id="video-btn" title="Видео">🎥</button>
+          <button class="icon-btn" id="search-in-chat-btn" title="Поиск в чате">🔍</button>
+          <button class="icon-btn" id="chat-menu-btn" title="Меню чата">⋮</button>
+        </header>
+
+        <button class="scroll-down-btn hidden" id="scroll-down-btn" title="Вниз">↓</button>
+
+        <div class="chat-search hidden" id="chat-search">
+          <input type="text" id="chat-search-input" placeholder="Поиск в чате..." />
+          <button class="icon-btn" id="chat-search-close">✕</button>
+        </div>
+
+        <div class="messages" id="messages"></div>
+
+        <div class="typing-indicator hidden" id="typing-indicator">
+          <span class="typing-user" id="typing-user">Кто-то</span>
+          <span class="typing-dot"></span>
+          <span class="typing-dot"></span>
+          <span class="typing-dot"></span>
+          <span class="typing-text">печатает...</span>
+        </div>
+
+        <div class="reactions-bar hidden" id="reactions-bar">
+          <button data-emoji="👍">👍</button>
+          <button data-emoji="❤️">❤️</button>
+          <button data-emoji="😂">😂</button>
+          <button data-emoji="😮">😮</button>
+          <button data-emoji="😢">😢</button>
+          <button data-emoji="🔥">🔥</button>
+        </div>
+
+        <div class="recording-bar hidden" id="recording-bar">
+          <span class="recording-dot"></span>
+          <span class="recording-time" id="recording-time">00:00</span>
+          <span class="recording-label">Запись голосового...</span>
+          <button class="icon-btn" id="cancel-recording">✕</button>
+          <button class="icon-btn record-send" id="send-recording">➤</button>
+        </div>
+
+        <!-- Панель быстрых эмодзи (ВНЕ формы!) -->
+        <div class="quick-emojis hidden" id="quick-emojis">
+          <button data-emoji="😀">😀</button>
+          <button data-emoji="😂">😂</button>
+          <button data-emoji="❤️">❤️</button>
+          <button data-emoji="👍">👍</button>
+          <button data-emoji="🔥">🔥</button>
+          <button data-emoji="🎉">🎉</button>
+          <button data-emoji="😢">😢</button>
+          <button data-emoji="😮">😮</button>
+        </div>
+
+        <form class="message-form" id="message-form">
+          <button type="button" class="icon-btn attach-btn" id="attach-btn" title="Прикрепить">📎</button>
+          <input type="file" id="file-input" style="display: none;" />
+          <input type="text" id="message-input" placeholder="Написать сообщение..." autocomplete="off" maxlength="2000" />
+          <button type="button" class="icon-btn mic-btn" id="mic-btn" title="Голосовое">🎤</button>
+          <button type="button" class="icon-btn emoji-btn" id="emoji-btn" title="Эмодзи">😀</button>
+          <button type="submit" class="send-btn">➤</button>
+        </form>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Меню вложений -->
+  <div class="attach-menu hidden" id="attach-menu">
+    <div class="attach-menu-item" data-type="image">
+      <span class="attach-icon">📷</span>
+      <span>Фото</span>
+    </div>
+    <div class="attach-menu-item" data-type="video">
+      <span class="attach-icon">🎥</span>
+      <span>Видео</span>
+    </div>
+    <div class="attach-menu-item" data-type="file">
+      <span class="attach-icon">📄</span>
+      <span>Файл</span>
+    </div>
+  </div>
+
+  <!-- Меню чата (упрощено, только для личных чатов) -->
+  <div class="chat-menu-dropdown hidden" id="chat-menu-dropdown">
+    <div class="chat-menu-item" data-action="profile">👤 Профиль</div>
+    <div class="chat-menu-item" data-action="search-chat">🔍 Поиск в чате</div>
+    <div class="chat-menu-item danger" data-action="block-user">🚫 Заблокировать</div>
+    <div class="chat-menu-item danger" data-action="clear-chat">🧹 Очистить историю</div>
+    <div class="chat-menu-item danger" data-action="delete-chat">🗑️ Удалить чат</div>
+  </div>
+
+  <!-- Модалка просмотра вложения -->
+  <div class="preview-modal hidden" id="preview-modal">
+    <button class="preview-close" id="preview-close">✕</button>
+    <div class="preview-content" id="preview-content"></div>
+  </div>
+
+  <!-- Модалка профиля -->
+  <div class="modal-overlay hidden" id="profile-modal">
+    <div class="modal">
+      <header class="modal-header">
+        <h2 id="modal-title">Профиль</h2>
+        <button class="icon-btn" id="modal-close">✕</button>
+      </header>
+      <div class="modal-body">
+        <div class="profile-header">
+          <div class="profile-avatar-big" id="modal-avatar">?</div>
+          <div class="profile-status-badge" id="modal-status-badge">●</div>
+        </div>
+        <div class="field">
+          <label>Отображаемое имя</label>
+          <input type="text" id="profile-fullname" placeholder="Ваше имя" maxlength="40" />
+        </div>
+        <div class="field">
+          <label>@username</label>
+          <input type="text" id="profile-username" placeholder="username" maxlength="20" />
+        </div>
+        <div class="field">
+          <label>Статус</label>
+          <input type="text" id="profile-status" placeholder="В сети, Работаю..." maxlength="40" />
+        </div>
+        <div class="field">
+          <label>О себе</label>
+          <textarea id="profile-bio" placeholder="Расскажите о себе..." maxlength="200" rows="3"></textarea>
+        </div>
+        <div class="field readonly">
+          <label>Email</label>
+          <span id="profile-email">—</span>
+        </div>
+        <div class="field readonly">
+          <label>Дата регистрации</label>
+          <span id="profile-created">—</span>
+        </div>
+        <div class="field">
+          <label>Приватность профиля</label>
+          <select id="profile-privacy">
+            <option value="public">🌐 Публичный — видят все</option>
+            <option value="contacts">👥 Только контакты</option>
+            <option value="private">🔒 Приватный — только я</option>
+          </select>
+        </div>
+        <p class="modal-message" id="modal-message"></p>
+        <div class="modal-actions">
+          <button class="btn-secondary" id="profile-cancel">Отмена</button>
+          <button class="btn-primary" id="profile-save">Сохранить</button>
+        </div>
+        <div class="danger-zone">
+          <h3>⚠️ Опасная зона</h3>
+          <p>Удаление аккаунта необратимо. Все ваши данные будут потеряны.</p>
+          <button class="btn-danger" id="profile-delete">Удалить аккаунт</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- МОДАЛКА НАСТРОЕК -->
+  <div class="modal-overlay hidden" id="settings-modal">
+    <div class="modal">
+      <header class="modal-header">
+        <h2>⚙️ Настройки</h2>
+        <button class="icon-btn" id="settings-close">✕</button>
+      </header>
+      <div class="modal-body">
+
+        <div class="settings-section">
+          <h3>🎨 Оформление</h3>
+
+          <div class="settings-row">
+            <span class="settings-label">🌙 Тёмная тема</span>
+            <label class="switch">
+              <input type="checkbox" id="set-theme" />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="settings-row">
+            <span class="settings-label">📱 Компактный режим</span>
+            <label class="switch">
+              <input type="checkbox" id="set-compact" />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="settings-row">
+            <span class="settings-label">🎭 Анимации</span>
+            <label class="switch">
+              <input type="checkbox" id="set-animations" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="settings-field">
+            <label>Размер шрифта</label>
+            <select id="set-font-size">
+              <option value="small">Маленький</option>
+              <option value="medium" selected>Средний</option>
+              <option value="large">Большой</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="settings-section">
+          <h3>🔔 Уведомления</h3>
+
+          <div class="settings-row">
+            <span class="settings-label">Звук новых сообщений</span>
+            <label class="switch">
+              <input type="checkbox" id="set-sound" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="settings-row">
+            <span class="settings-label">🔔 Браузерные уведомления</span>
+            <label class="switch">
+              <input type="checkbox" id="set-notifications" />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="settings-row">
+            <span class="settings-label">Показывать "печатает..."</span>
+            <label class="switch">
+              <input type="checkbox" id="set-typing" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="settings-row">
+            <span class="settings-label">Отметка онлайн</span>
+            <label class="switch">
+              <input type="checkbox" id="set-online" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="settings-section">
+          <h3>💬 Интерфейс</h3>
+
+          <div class="settings-row">
+            <span class="settings-label">Показывать время</span>
+            <label class="switch">
+              <input type="checkbox" id="set-time" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="settings-row">
+            <span class="settings-label">Галочки прочитано ✓✓</span>
+            <label class="switch">
+              <input type="checkbox" id="set-readcheck" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="settings-field">
+            <label>🌐 Язык</label>
+            <select id="set-language">
+              <option value="ru" selected>Русский</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="settings-section">
+          <h3>⚠️ Сброс</h3>
+          <button class="btn-secondary" id="set-reset" style="width:100%; margin-top:10px;">Сбросить все настройки</button>
+        </div>
+
+        <p class="modal-message" id="settings-message"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ МОДАЛКА ВХОДЯЩЕГО ЗВОНКА ═══════════ -->
+  <div class="call-modal hidden" id="incoming-call-modal">
+    <div class="call-card">
+      <div class="call-avatar" id="incoming-call-avatar">?</div>
+      <h2 class="call-title" id="incoming-call-name">Пользователь</h2>
+      <p class="call-subtitle" id="incoming-call-type">📞 Аудио-звонок</p>
+
+      <div class="call-actions">
+        <button class="call-btn decline" id="decline-call-btn" title="Отклонить">
+          <span>✕</span>
+        </button>
+        <button class="call-btn accept" id="accept-call-btn" title="Принять">
+          <span>📞</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ МОДАЛКА АКТИВНОГО ЗВОНКА ═══════════ -->
+  <div class="call-modal hidden" id="active-call-modal">
+    <div class="call-card active-call">
+
+      <video id="remote-video" class="remote-video" autoplay playsinline></video>
+
+      <video id="local-video" class="local-video" autoplay muted playsinline></video>
+
+      <div class="audio-call-bg" id="audio-call-bg">
+        <div class="call-avatar-big" id="active-call-avatar">?</div>
+      </div>
+
+      <div class="call-info">
+        <h2 id="active-call-name">Пользователь</h2>
+        <p id="call-timer">00:00</p>
+      </div>
+
+      <div class="call-controls">
+        <button class="call-ctrl-btn" id="mute-btn" title="Микрофон">🎤</button>
+        <button class="call-ctrl-btn" id="camera-btn" title="Камера">🎥</button>
+        <button class="call-ctrl-btn end" id="end-call-btn" title="Завершить">
+          <span>📞</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

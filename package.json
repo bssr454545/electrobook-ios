@@ -1,0 +1,48 @@
+{
+  "name": "electrobook",
+  "version": "1.0.0",
+  "description": "Electrobook — мессенджер",
+  "main": "electron-app/electron-main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --x64"
+  },
+  "author": "Electrobook Team",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.electrobook.app",
+    "productName": "Electrobook",
+    "directories": {
+      "output": "C:\\Electrobook-final"
+    },
+    "files": [
+      "electron-app/**/*",
+      "index.html",
+      "style.css",
+      "main.js",
+      "supabase.js",
+      "public/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "executableName": "Electrobook"
+    }
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/cli": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
+    "@capacitor/ios": "^8.5.2"
+  }
+}
